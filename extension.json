@@ -1,25 +1,20 @@
 {
-	"name": "PDFParser Integration",
-	"version": "0.1.1",
-	"author": [
-		"Vincent Mahnke"
-	],
-	"url": "https://github.com/ViMaSter/HowToBeAHero-WikiToPdf-MediawikiIntegration",
-	"descriptionmsg": "pdfparserintegration-desc",
+	"name": "HowToBeAHero WikiToPdf",
+	"version": "2.0.0",
+	"author": [ "Vincent Mahnke", "How to be a Hero e. V." ],
+	"url": "https://github.com/How-to-be-a-Hero-e-V/HowToBeAHero-WikiToPdf-MediawikiIntegration",
+	"descriptionmsg": "htbah-wikitopdf-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
-	"Hooks": {
-		"BaseTemplateToolbox": [
-			"PDFParserIntegration\\Hooks::onTemplateBuildToolbox"
-		]
+	"requires": { "MediaWiki": ">= 1.39.0" },
+	"AutoloadNamespaces": { "HTBAH\\WikiToPdf\\": "includes/" },
+	"HookHandlers": { "main": { "class": "HTBAH\\WikiToPdf\\Hooks" } },
+	"Hooks": { "SidebarBeforeOutput": "main" },
+	"APIModules": { "htbahpdf": "HTBAH\\WikiToPdf\\ApiHtbahPdf" },
+	"MessagesDirs": { "HTBAHWikiToPdf": [ "i18n" ] },
+	"config": {
+		"WikiToPdfUrl": { "value": "/pdf", "description": "Basis-URL des WikiToPdf-Dienstes (Buch-Baukasten unter <url>/, Einzelseite unter <url>/book?pages=...)" },
+		"WikiToPdfNamespaces": { "value": [ 0, 14 ], "description": "Namensräume, für die der Sidebar-Link angezeigt wird" }
 	},
-	"MessagesDirs": {
-		"PDFParser": [
-			"i18n"
-		]
-	},
-	"AutoloadClasses": {
-		"PDFParserIntegration\\Hooks": "PDFParserIntegration.Hooks.class.php"
-	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -1,10 +1,9 @@
 {
-	"@metadata": {
-		"authors": [
-			"Vincent Mahnke"
-		]
-	},
-	"pdfparserintegration-desc": "Anbindung des HTBAH-PDFParsers als Alternative für MediaWikis Standarddruckfunktion",
-	"pdfparserintegration-sidebar-title": "Erstellt eine druckbare PDF der aktuell angezeigten Seite",
-	"pdfparserintegration-sidebar-text": "PDF generieren"
+	"@metadata": { "authors": [ "How to be a Hero e. V." ] },
+	"htbah-wikitopdf-desc": "Verbindet das Wiki mit dem WikiToPdf-Dienst: Buch-PDFs, Buch-Baukasten und Revisionsauskunft für freigegebene Versionen",
+	"htbah-wikitopdf-page": "Diese Seite als Buch-PDF",
+	"htbah-wikitopdf-builder": "Buch-Baukasten (PDF)",
+	"apihelp-htbahpdf-summary": "Liefert je Titel die für Leser sichtbare Revision (freigegeben oder aktuell) für den PDF-Dienst.",
+	"apihelp-htbahpdf-param-titles": "Seitentitel, mit | getrennt (höchstens 50).",
+	"apihelp-htbahpdf-example": "Revisionen für Kampf und Begabungen abfragen"
 }
