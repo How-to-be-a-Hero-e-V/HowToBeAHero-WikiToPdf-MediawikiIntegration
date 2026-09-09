@@ -1,9 +1,14 @@
 {
-	"@metadata": { "authors": [ "How to be a Hero e. V." ] },
+	"@metadata": {
+		"authors": [
+			"How to be a Hero e. V."
+		]
+	},
 	"htbah-wikitopdf-desc": "{{desc|name=HowToBeAHero WikiToPdf|url=https://github.com/How-to-be-a-Hero-e-V/HowToBeAHero-WikiToPdf-MediawikiIntegration}}",
 	"htbah-wikitopdf-page": "Toolbox link that renders the current page as a book PDF.",
 	"htbah-wikitopdf-builder": "Toolbox link to the book builder web UI.",
 	"apihelp-htbahpdf-summary": "{{doc-apihelp-summary|htbahpdf}}",
 	"apihelp-htbahpdf-param-titles": "{{doc-apihelp-param|htbahpdf|titles}}",
-	"apihelp-htbahpdf-example": "{{doc-apihelp-example|htbahpdf}}"
+	"apihelp-htbahpdf-example": "{{doc-apihelp-example|htbahpdf}}",
+	"htbah-wikitopdf-sheet": "Toolbox link to the online character sheet editor."
 }

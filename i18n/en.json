@@ -1,9 +1,14 @@
 {
-	"@metadata": { "authors": [ "How to be a Hero e. V." ] },
+	"@metadata": {
+		"authors": [
+			"How to be a Hero e. V."
+		]
+	},
 	"htbah-wikitopdf-desc": "Connects the wiki to the WikiToPdf service: book PDFs, the book builder and revision lookup for approved versions",
 	"htbah-wikitopdf-page": "This page as book PDF",
 	"htbah-wikitopdf-builder": "Book builder (PDF)",
 	"apihelp-htbahpdf-summary": "Returns, per title, the revision readers see (approved or latest) for the PDF service.",
 	"apihelp-htbahpdf-param-titles": "Page titles separated by | (at most 50).",
-	"apihelp-htbahpdf-example": "Look up revisions for Kampf and Begabungen"
+	"apihelp-htbahpdf-example": "Look up revisions for Kampf and Begabungen",
+	"htbah-wikitopdf-sheet": "Fill in a character sheet"
 }

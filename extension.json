@@ -1,20 +1,56 @@
 {
 	"name": "HowToBeAHero WikiToPdf",
-	"version": "2.0.0",
-	"author": [ "Vincent Mahnke", "How to be a Hero e. V." ],
+	"version": "2.1.0",
+	"author": [
+		"Vincent Mahnke",
+		"How to be a Hero e. V."
+	],
 	"url": "https://github.com/How-to-be-a-Hero-e-V/HowToBeAHero-WikiToPdf-MediawikiIntegration",
 	"descriptionmsg": "htbah-wikitopdf-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
-	"requires": { "MediaWiki": ">= 1.39.0" },
-	"AutoloadNamespaces": { "HTBAH\\WikiToPdf\\": "includes/" },
-	"HookHandlers": { "main": { "class": "HTBAH\\WikiToPdf\\Hooks" } },
-	"Hooks": { "SidebarBeforeOutput": "main" },
-	"APIModules": { "htbahpdf": "HTBAH\\WikiToPdf\\ApiHtbahPdf" },
-	"MessagesDirs": { "HTBAHWikiToPdf": [ "i18n" ] },
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"AutoloadNamespaces": {
+		"HTBAH\\WikiToPdf\\": "includes/"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "HTBAH\\WikiToPdf\\Hooks"
+		}
+	},
+	"Hooks": {
+		"SidebarBeforeOutput": "main"
+	},
+	"APIModules": {
+		"htbahpdf": "HTBAH\\WikiToPdf\\ApiHtbahPdf"
+	},
+	"MessagesDirs": {
+		"HTBAHWikiToPdf": [
+			"i18n"
+		]
+	},
 	"config": {
-		"WikiToPdfUrl": { "value": "/pdf", "description": "Basis-URL des WikiToPdf-Dienstes (Buch-Baukasten unter <url>/, Einzelseite unter <url>/book?pages=...)" },
-		"WikiToPdfNamespaces": { "value": [ 0, 14 ], "description": "Namensräume, für die der Sidebar-Link angezeigt wird" }
+		"WikiToPdfUrl": {
+			"value": "/pdf",
+			"description": "Basis-URL des WikiToPdf-Dienstes (Buch-Baukasten unter <url>/, Einzelseite unter <url>/book?pages=...)"
+		},
+		"WikiToPdfNamespaces": {
+			"value": [
+				0,
+				14
+			],
+			"description": "Namensräume, für die der Sidebar-Link angezeigt wird"
+		},
+		"WikiToPdfInternalUrl": {
+			"value": "http://wikitopdf:3000",
+			"description": "Interne Adresse des Dienstes im Docker-Netz (Löschen und Auskunft)"
+		},
+		"WikiToPdfToken": {
+			"value": "",
+			"description": "Gemeinsames Geheimnis für die interne Schnittstelle; erzeugt der Dienst in seinem Datenverzeichnis"
+		}
 	},
 	"manifest_version": 2
 }

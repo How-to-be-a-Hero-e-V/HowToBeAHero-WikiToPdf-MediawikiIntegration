@@ -25,7 +25,12 @@ class Hooks implements SidebarBeforeOutputHook {
 		$links['htbah-pdf-builder'] = [
 			'id' => 't-htbah-pdf-builder',
 			'text' => $skin->msg( 'htbah-wikitopdf-builder' )->text(),
-			'href' => $base . '/',
+			'href' => $base . '/buch',
+		];
+		$links['htbah-sheet'] = [
+			'id' => 't-htbah-sheet',
+			'text' => $skin->msg( 'htbah-wikitopdf-sheet' )->text(),
+			'href' => $base . '/bogen',
 		];
 		$sidebar['TOOLBOX'] = array_merge( $links, $sidebar['TOOLBOX'] ?? [] );
 	}
